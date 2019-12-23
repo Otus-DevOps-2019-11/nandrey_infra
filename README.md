@@ -1,13 +1,13 @@
 # nandrey_infra
 nandrey Infra repository
 
-'bastion_IP = 35.207.150.141'
-'someinternalhost_IP = 10.156.0.3'
+bastion_IP = 35.207.150.141
+someinternalhost_IP = 10.156.0.3
 
 -============================-
 
-`testapp_IP = 35.246.140.105`
-`testapp_port = 9292`
+testapp_IP = 35.246.140.105
+testapp_port = 9292
 
 Created from CLI GCP VM - reddit-app
 

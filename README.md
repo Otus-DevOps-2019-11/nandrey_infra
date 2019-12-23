@@ -6,7 +6,7 @@ someinternalhost_IP = 10.156.0.3
 ```
 -============================-
 ```
-testapp_IP = 35.246.140.105
+testapp_IP = 35.246.220.53
 testapp_port = 9292
 ```
 Created from CLI GCP VM - reddit-app

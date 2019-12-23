@@ -20,10 +20,10 @@ echo
 echo "I will install Reddit for you, Dave"
 echo
 
-mkdir /tmp/reddit.express42
-cd /tmp/reddit.express42
+mkdir /usr/reddit.express42
+cd /usr/reddit.express42
 git clone -b monolith git://github.com/express42/reddit.git
-cd reddit && bundle install
+cd /usr/reddit.express42/reddit && bundle install
 
 if [ $? -eq 0 ]; then
     echo
@@ -54,8 +54,6 @@ else
     echo "Something wrong with Puma installation, Dave"
     exit
 fi
-
-rm -rf /tmp/reddit.express42
 
 echo
 echo "Have a good day, Dave"

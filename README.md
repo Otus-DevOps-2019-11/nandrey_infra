@@ -34,3 +34,17 @@ CLI script to add Firawall Rule "default-puma-server" TCP,9292:
 gcloud compute --project=otus-nandrey-infra firewall-rules create default-puma-server --direction=INGRESS --priority=1000 --network=default --action=ALLOW --rules=tcp:9292 --source-ranges=0.0.0.0/0 --target-tags=puma-server
 
 -============================-
+
+HW#7
+
+1. Added variable.json to .gitignore
+
+2. In folder ./packer added .json configs: ubuntu16.json and immutable.json to create two different GCE images. Variables are in variables.json.example . Use with -var-file=<VAR FILE NAME>
+
+3. In folder ./packer added two folders: scripts and files . There are support scripts to create images in those folders
+
+4. All scripts from previous HW#6 are moved to ./config-scripts
+
+5. In folder ./config-scripts added script: create-redditvm.sh to create VM in GCE with ready image. Image contains Ruby, MongoDB and Puma. Puma is enabled to start at boot.
+
+-============================-

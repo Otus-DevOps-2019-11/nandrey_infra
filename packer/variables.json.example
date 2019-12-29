@@ -1,0 +1,9 @@
+{
+  "project_id": "otus-nandrey-infra",
+  "source_image_family": "ubuntu-1604-lts",
+  "image_description": "otus-puma-app",
+  "disk_type": "pd-ssd",
+  "disk_size": "16",
+  "network": "default",
+  "tags": "puma-server"
+}

@@ -48,3 +48,23 @@ HW#7
 5. In folder ./config-scripts added script: create-redditvm.sh to create VM in GCE with ready image. Image contains Ruby, MongoDB and Puma. Puma is enabled to start at boot.
 
 -============================-
+
+HW#8
+
+1. Added terraform folders with content:
+
+./terraform
+|_./terraform/files/
+|  |_deploy.sh
+|  |_puma.service
+|
+|_./main.tf
+|_./outputs.tf
+|_./terraform.tfvars.example
+|_./variables.tf
+
+2. With terraform and provided main.tf it's possible to create in GCE from base packer made image VM with running Puma and firewall rules for Puma service.
+
+3.* It's possible to add several SSH keys with current main.tf , but exiting keys not described in main.rf will be deleted.
+
+-============================-

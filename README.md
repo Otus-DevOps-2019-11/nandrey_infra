@@ -76,3 +76,12 @@ HW#9
 3. Configuration for creation two buckets now added
 
 -============================-
+
+HW#10
+
+1. Stage group servers are launched
+2. Ansible folder created with files: ansible.cfg , inventory.yml , requirements.txt
+3. Playbook clone.yml to git reddit on app server created
+4. Results Q13.2: Two servers checked (ok=2) and applied config to one (changed=1). We have deleted Reddit folder, so Ansible should clone to folder.
+
+-============================-

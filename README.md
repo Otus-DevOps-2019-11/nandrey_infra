@@ -68,3 +68,11 @@ HW#8
 3.* It's possible to add several SSH keys with current main.tf , but exiting keys not described in main.rf will be deleted.
 
 -============================-
+
+HW#9
+
+1. TF configuration from HW#8 is now changed to use modules (./modules folder)
+2. TF configuration now has two pipelines: stage and provided
+3. Configuration for creation two buckets now added
+
+-============================-

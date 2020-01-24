@@ -85,3 +85,10 @@ HW#10
 4. Results Q13.2: Two servers checked (ok=2) and applied config to one (changed=1). We have deleted Reddit folder, so Ansible should clone to folder.
 
 -============================-
+
+HW#11
+
+1. Ansible provision changed to module structure - site.yml describes whole provision base and deploy.yml, db.yml, app.yml describes deployment to various VMs
+2. Packer provisions Ruby and MongoDB with Ansible
+
+-============================-

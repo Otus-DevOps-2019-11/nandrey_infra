@@ -1,12 +1,6 @@
 ---
-- name: Install Ruby and Bundler
-  hosts: all
+- name: Packer installs Ruby
+  hosts: app
   become: true
-
-  tasks:
-  - name: Install Ruby and RubyGems and required packages
-    apt: "name={{ item }} state=present"
-    with_items:
-      - ruby-full
-      - ruby-bundler
-      - build-essential
+  roles:
+    - app

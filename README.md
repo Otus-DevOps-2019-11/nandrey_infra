@@ -139,3 +139,12 @@ HW#12
 5. Ansible now uses ANSIBLE_VAULT
 
 -============================-
+
+HW#13
+
+1. Packer now uses Ansible roles
+2. Made local (VirtualBox) deployment with Vagrant
+3. Made tests with Molecule and Testinfra on DataBase VM
+4. .gitignore - added Vagrant support
+
+-============================-

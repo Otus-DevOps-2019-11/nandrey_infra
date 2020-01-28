@@ -92,3 +92,50 @@ HW#11
 2. Packer provisions Ruby and MongoDB with Ansible
 
 -============================-
+
+HW#12
+
+1. Structure of Ansible folder now:
+./ansible/
+├── environments
+│   ├── prod
+│   │   └── group_vars
+│   └── stage
+│       └── group_vars
+├── old
+│   ├── files
+│   └── templates
+├── playbooks
+└── roles
+    ├── app
+    │   ├── defaults
+    │   ├── files
+    │   ├── handlers
+    │   ├── meta
+    │   ├── tasks
+    │   ├── templates
+    │   ├── tests
+    │   └── vars
+    ├── db
+    │   ├── defaults
+    │   ├── files
+    │   ├── handlers
+    │   ├── meta
+    │   ├── tasks
+    │   ├── templates
+    │   ├── tests
+    │   └── vars
+    └── jdauphant.nginx
+        ├── defaults
+        ├── handlers
+        ├── meta
+        ├── tasks
+        ├── templates
+        ├── test
+        └── vars
+2. All unused files moved to ansible/old
+3. Playbooks moved to ansible/playbooks
+4. Ansible structure now includes enviroments and roles
+5. Ansible now uses ANSIBLE_VAULT
+
+-============================-

@@ -1,25 +1,6 @@
 ---
-- name: Install MongoDB
+- name: Packer installs MongoDB
   hosts: all
   become: true
-
-  tasks:
-  - name: Add APT key
-    apt_key:
-      id: E52529D4
-      keyserver: keyserver.ubuntu.com
-
-  - name: Add APT repository
-    apt_repository:
-      repo: deb [ arch=amd64,arm64 ] http://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/4.0 multiverse
-      state: present
-
-  - name: Install MongoDB package
-    apt:
-      name: mongodb-org
-      state: present
-
-  - name: Configure service supervisor
-    systemd:
-      name: mongod
-      enabled: yes
+  roles:
+    - db
